@@ -1,0 +1,160 @@
+/* Custom Styles for Pave the Great Salt Lake */
+
+:root {
+    --yellow-400: #F7DF1E;
+    --asphalt: #333333;
+    --orange: #FF6B35;
+    --concrete: #F5F5F5;
+    --dark-text: #222222;
+    --sky-blue: #87CEEB;
+}
+
+.bg-asphalt {
+    background-color: var(--asphalt);
+}
+
+.text-asphalt {
+    color: var(--asphalt);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-left.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-right.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-up.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up-delayed {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease-out 0.3s, transform 0.5s ease-out 0.3s;
+}
+
+.slide-up-delayed.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+.rotate-wiggle {
+    animation: wiggle 2.5s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--concrete);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow-400);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+}
+
+/* Button Hover Effects */
+.btn-bounce:hover {
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Extra Styling */
+.shadow-yellow {
+    box-shadow: 0 4px 14px rgba(247, 223, 30, 0.3);
+}
+
+.counter {
+    display: inline-block;
+}
+
+/* Make sure the header background image covers the area properly */
+header.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Add a subtle overlay to ensure text readability */
+header.bg-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}

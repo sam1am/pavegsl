@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pave the Great Salt Lake Initiative</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-asphalt text-white py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <i class="fas fa-road text-yellow-400 text-3xl mr-3"></i>
+                <span class="text-xl font-bold tracking-wider">PAVE THE GREAT SALT LAKE</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#mission" class="hover:text-yellow-400 transition-colors duration-300">Mission</a>
+                <a href="#benefits" class="hover:text-yellow-400 transition-colors duration-300">Benefits</a>
+                <a href="#faq" class="hover:text-yellow-400 transition-colors duration-300">FAQ</a>
+                <a href="#donate"
+                    class="bg-yellow-400 text-asphalt font-bold px-4 py-2 rounded hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">Donate</a>
+            </div>
+            <button class="md:hidden text-white text-2xl" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden bg-asphalt text-white py-4 px-4 md:hidden">
+        <a href="#mission" class="block py-2 hover:text-yellow-400">Mission</a>
+        <a href="#benefits" class="block py-2 hover:text-yellow-400">Benefits</a>
+        <a href="#faq" class="block py-2 hover:text-yellow-400">FAQ</a>
+        <a href="#donate"
+            class="block py-2 bg-yellow-400 text-asphalt font-bold px-4 rounded mt-2 text-center">Donate</a>
+    </div>
+
+    <header class="relative flex items-center justify-center h-screen overflow-hidden bg-cover bg-center"
+        style="background-image: url('./images/asphalt.jpg');">
+        <div
+            class="relative z-10 bg-black bg-opacity-60 text-white p-8 md:p-12 lg:p-16 rounded-lg text-center max-w-4xl mx-4 fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight slide-up">A Concrete Solution for Utah's Dusty
+                Dilemma</h1>
+            <p class="text-xl md:text-2xl mb-8 slide-up">For too long, Utah has suffered from the unpredictable nature
+                of the so-called "Great" Salt Lake.</p>
+            <div class="mb-10 slide-up">
+                <span
+                    class="inline-block bg-yellow-400 text-asphalt text-2xl md:text-3xl font-black p-4 rounded rotate-wiggle">FINALLY
+                    SOLVING UTAH'S LAKE PROBLEM</span>
+            </div>
+            <a href="#mission"
+                class="inline-block bg-yellow-400 text-asphalt px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 hover:rotate-1 slide-up-delayed">
+                LEARN ABOUT OUR VISION
+            </a>
+        </div>
+    </header>
+
+    <section id="mission" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-3 text-asphalt">OUR VISIONARY MISSION</h2>
+                <div class="h-1 w-24 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 fade-in-left">
+                    <img src="./images/pave.png" alt="Paving the Great Salt Lake"
+                        class="rounded-lg shadow-2xl max-w-full">
+                </div>
+                <div class="lg:w-1/2 lg:pl-16 fade-in-right">
+                    <h3 class="text-3xl font-bold mb-6 text-asphalt">Concrete Solutions for Liquid Problems</h3>
+                    <p class="text-lg mb-6 text-gray-700">The Pave the Great Salt Lake Initiative proposes the complete
+                        concreting of this troublesome body of water, transforming an environmental hazard into a
+                        thriving commercial opportunity.</p>
+                    <p class="text-lg mb-8 text-gray-700">Our team of experts (car salesmen and paving contractors) have
+                        devised the perfect solution to Utah's lake problem: replace it with 1,700 square miles of
+                        premium concrete.</p>
+                    <div class="flex items-center">
+                        <i class="fas fa-hard-hat text-yellow-400 text-3xl mr-4"></i>
+                        <p class="text-xl font-semibold text-asphalt">Progress is just a pour away!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-3 text-asphalt">BENEFITS OF OUR PROPOSAL</h2>
+                <div class="h-1 w-24 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 fade-in">
+                    <div class="text-yellow-400 text-5xl mb-6">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-asphalt">ELIMINATE DUST PERMANENTLY</h3>
+                    <p class="text-gray-700">Why worry about toxic dust when you can simply entomb it under 1,700 square
+                        miles of premium concrete? Out of sight, out of lungs!</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 fade-in">
+                    <div class="text-yellow-400 text-5xl mb-6">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-asphalt">ECONOMIC PROSPERITY</h3>
+                    <p class="text-gray-700">Imagine the world's largest car dealership plaza! Utah can become the
+                        premier destination for purchasing slightly-above-market-price sedans.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 fade-in">
+                    <div class="text-yellow-400 text-5xl mb-6">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-asphalt">DISCOURAGE AVIAN FREELOADERS</h3>
+                    <p class="text-gray-700">For too long, migratory birds have used our airspace without contributing
+                        to our economy. These feathered immigrants arrive without paperwork!</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 fade-in">
+                    <div class="text-yellow-400 text-5xl mb-6">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-asphalt">JOBS, JOBS, JOBS</h3>
+                    <p class="text-gray-700">It will take thousands of workers to pour this much concrete! The economic
+                        benefits will trickle down almost as effectively as the concrete will prevent water from doing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-asphalt text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-10 fade-in">THE CONCRETE NUMBERS</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="counter-up fade-in" data-target="1700">
+                    <span class="text-5xl font-bold text-yellow-400 counter">0</span>
+                    <p class="text-xl mt-2">Square Miles of Concrete</p>
+                </div>
+                <div class="counter-up fade-in" data-target="10000">
+                    <span class="text-5xl font-bold text-yellow-400 counter">0</span>
+                    <p class="text-xl mt-2">Car Dealerships Potential</p>
+                </div>
+                <div class="counter-up fade-in" data-target="100">
+                    <span class="text-5xl font-bold text-yellow-400 counter">0</span><span
+                        class="text-5xl font-bold text-yellow-400">%</span>
+                    <p class="text-xl mt-2">Problem Solved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-3 text-asphalt">FREQUENTLY ASKED QUESTIONS</h2>
+                <div class="h-1 w-24 bg-yellow-400 mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8 fade-in">
+                    <h3 class="text-2xl font-bold text-asphalt mb-3">What about the ecosystem?</h3>
+                    <p class="text-lg text-gray-700">We've calculated that ecosystems provide far less tax revenue than
+                        car dealerships. The math is clear!</p>
+                </div>
+                <div class="mb-8 fade-in">
+                    <h3 class="text-2xl font-bold text-asphalt mb-3">Isn't the lake important for snow patterns and
+                        local climate?</h3>
+                    <p class="text-lg text-gray-700">Snow is just frozen water that requires expensive removal. Less
+                        snow means more savings!</p>
+                </div>
+                <div class="mb-8 fade-in">
+                    <h3 class="text-2xl font-bold text-asphalt mb-3">Couldn't we just conserve water upstream to refill
+                        the lake naturally?</h3>
+                    <p class="text-lg text-gray-700">And deny ourselves the opportunity to create the world's largest
+                        parking lot? Why do you hate America?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="py-20 bg-yellow-400">
+        <div class="container mx-auto px-4 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold mb-6 text-asphalt">JOIN OUR MOVEMENT</h2>
+                <p class="text-xl mb-8 text-asphalt max-w-3xl mx-auto">Support our initiative to solve all of Utah's
+                    problems by replacing troublesome nature with convenient concrete!</p>
+                <a href="#"
+                    class="inline-block bg-asphalt text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:rotate-1 mb-8">
+                    DONATE TODAY!
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-asphalt text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <i class="fas fa-road text-yellow-400 text-3xl mr-3"></i>
+                        <span class="text-xl font-bold tracking-wider">PAVE THE GREAT SALT LAKE</span>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="bg-gray-700 hover:bg-yellow-400 hover:text-asphalt w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-gray-700 hover:bg-yellow-400 hover:text-asphalt w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-gray-700 hover:bg-yellow-400 hover:text-asphalt w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center">
+                <p class="mt-4 text-gray-400">&copy; 2025 Pave the Great Salt Lake. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
